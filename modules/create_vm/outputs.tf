@@ -8,3 +8,7 @@ output "external_ipaddr_vm" {
   value       = yandex_compute_instance.vm.network_interface.0.nat_ip_address
 }
 
+output "vpc_subnet" {
+   description = "id of instances subnet"
+   value       = yandex_compute_instance.vm.network_interface.0.subnet_id
+}

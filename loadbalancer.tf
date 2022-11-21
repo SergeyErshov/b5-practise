@@ -39,7 +39,7 @@ resource "yandex_lb_network_load_balancer" "lb01" {
          name = "http"
          http_options {
             port = 80
-            path = "/ping"
+            path = "/"
          }
       }
    }

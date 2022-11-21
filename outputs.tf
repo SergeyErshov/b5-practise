@@ -20,3 +20,7 @@ output "external_ipaddr_vm02" {
   value       = module.yandex_instance_2.external_ipaddr_vm
 }
 
+output "external_ipaddr_lb" {
+   description = "external ip address of load balancer"
+   value = yandex_lb_network_load_balancer.lb01.listener
+}

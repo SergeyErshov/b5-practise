@@ -5,8 +5,8 @@ variable "ya_account" {
 }
 
 variable "ya_region" {
-  description = "Specify region in Yaundex Cloud"
+  description = "Specify region for LB in Yaundex Cloud"
   type        = string
-  default     = "ru-central1-a"
+  default     = "ru-central1"
 }
 

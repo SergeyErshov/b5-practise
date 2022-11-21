@@ -2,8 +2,8 @@
 
 # Создаем целевую группу web_balancer
 
-resource "yandex_lb_target_group" "web_balancer" {
-  name      = "target_group_1"
+resource "yandex_lb_target_group" "lb_tg_01" {
+  name      = "lbtg01"
   region_id = var.ya_region
 
   target {
